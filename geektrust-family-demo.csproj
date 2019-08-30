@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>geektrust_family_demo</RootNamespace>
+    <!-- Add a assembly name entry to your project and make sure it is geektrust-->
     <AssemblyName>geektrust</AssemblyName>
   </PropertyGroup>
 
