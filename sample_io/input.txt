@@ -1,0 +1,3 @@
+ADD_CHILD Mother Child Female
+GET_RELATIONSHIP MaleName Paternal-Aunt
+GET_RELATIONSHIP FemaleName Maternal-Uncle

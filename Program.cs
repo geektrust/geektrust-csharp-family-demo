@@ -9,16 +9,21 @@ namespace geektrust_family_demo
         {
             String filename = args[0];
             FileStream fileStream = new FileStream(filename, FileMode.Open);
+            string line;  
+
             using (StreamReader reader = new StreamReader(fileStream))
             {
-                string line = reader.ReadLine();
-                //FOR EACH COMMAND GET THE OUTPUT AND PRINT THAT
-                string result = doOperation(line);
-                Console.WriteLine("PERSON_NOT_FOUND");
+                while((line = reader.ReadLine()) != null)  {
+                    //FOR EACH COMMAND GET THE OUTPUT AND PRINT THAT
+                    string result = doOperation(line);
+                    Console.WriteLine(result);
+                }
             }
         }
-
         static string doOperation(string line) {
+            if (line.StartsWith("ADD_CHILD")) {
+                return "CHILD_ADDITION_FAILED";
+            }
             return "PERSON_NOT_FOUND";
         }
     }
