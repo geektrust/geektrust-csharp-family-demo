@@ -13,6 +13,7 @@ dotnet bin/geektrust.dll sample_io/input.txt
 will return 
 
 ```
+CHILD_ADDITION_FAILED
 PERSON_NOT_FOUND
 PERSON_NOT_FOUND
 ```
